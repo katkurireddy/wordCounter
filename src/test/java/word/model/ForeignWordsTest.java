@@ -3,8 +3,8 @@ package word.model;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,7 +14,7 @@ public class ForeignWordsTest {
 
     @Before
     public void setup() {
-        List<Word> words = new ArrayList<>();
+        Set<Word> words = new HashSet<>();
         foreignWords = new ForeignWords(words);
     }
 

@@ -4,9 +4,7 @@ import word.model.ForeignWords;
 import word.model.Word;
 import word.translate.Translator;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class WordCountMap {
 
@@ -22,7 +20,7 @@ public class WordCountMap {
         if (wordsMap.containsKey(translatedWord)) {
             wordsMap.get(translatedWord).addWord(given);
         } else {
-            List<Word> fwords = new ArrayList<>();
+            Set<Word> fwords = new HashSet<>();
             fwords.add(given);
             wordsMap.put(translatedWord, new ForeignWords(fwords));
         }
