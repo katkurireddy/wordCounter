@@ -1,12 +1,12 @@
 # wordCounter
 
-The application uses a map to hold the english word as a key and all the foreign words in a list as its values. 
+The application uses a map to hold the english word as a key and all the foreign words in a set as its values. 
 
 
 When the user enters a word, the program always gets its English translated word and puts it in the map.
 
 
-When the user tries to retrieve any word, it gets its English translation and finds the key. Based on this, it goes to the value, which is a list and if it finds the given word in this list, the program outputs the size of the list.
+When the user tries to retrieve any word, it gets its English translation and finds the key. Based on this, it goes to the value, which is a set and if it finds the given word in this list, the program outputs the size of the list.
 
 
 Example: User enters "flor"
